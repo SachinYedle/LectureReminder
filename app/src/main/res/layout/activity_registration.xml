@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/name"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:hint="@string/name" />
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/student_class"
+        android:inputType="text"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:hint="@string/student_class"/>
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/email"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:hint="@string/email"/>
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/mobile_number"
+        android:inputType="phone"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:hint="@string/mobile_number"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/blood_group"
+            android:layout_gravity="center" />
+        <Spinner
+            android:layout_width="@dimen/spinner_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner" />
+
+    </LinearLayout>
+    <Button  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/submit"
+        android:id="@+id/submit_button"/>
+
+</LinearLayout>
